@@ -26,7 +26,7 @@ interface Agent {
   temperature: number;
 }
 
-export default function ChatUI() {
+const ChatUI = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [showSettings, setShowSettings] = useState(false);
@@ -298,3 +298,5 @@ export default function ChatUI() {
     </Box>
   );
 }
+
+export default ChatUI;

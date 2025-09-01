@@ -1,5 +1,8 @@
 import ChatUI from './chat-ui'
 
-export default function ChatPage() {
+const ChatPage = () => {
   return <ChatUI />
 }
+
+
+export default ChatPage
