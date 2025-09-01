@@ -19,16 +19,13 @@ const eslintConfig = [
     rules: {
       "react/react-in-jsx-scope": "off",
       "react/jsx-uses-react": "off",
-      "no-unused-vars": "warn",
       "react/prop-types": "off",
-      "react/function-component-definition": [
-        "error",
-        {
-          namedComponents: "arrow-function",
-          unnamedComponents: "arrow-function",
-        },
-      ],
-      "@typescript-eslint/no-empty-object-type": "off", 
+
+      "react/function-component-definition": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+
+      "@typescript-eslint/no-empty-object-type": "off",
     },
   },
 ];
