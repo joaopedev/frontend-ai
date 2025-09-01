@@ -77,6 +77,7 @@ export default function ChatUI() {
         question: userMessage.text,
         agentId: selectedAgentId,
       });
+      console.log("Resposta do servidor:", res.status, res.data);
       const text =
         typeof res.data === "string"
           ? res.data
